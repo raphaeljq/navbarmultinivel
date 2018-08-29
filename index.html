@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap4 Multilevel Dropdown Test</title>
+  
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">
+  	<div class="row">
+        <h2>Multi level dropdown menu in Bootstrap</h2>
+        <hr>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </button>
+            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                <li class="dropdown-item"><a href="#">Faz algo</a></li>
+                <li class="dropdown-item"><a href="#">Mais algo</a></li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-submenu">
+                  <a  class="dropdown-item" tabindex="-1" href="#">Passe o mouse aqui para mais opções</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a tabindex="-1" href="#">Segundo nível</a></li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="#">Um pouco mais..</a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item"><a href="#">3° nível</a></li>
+                            <li class="dropdown-submenu"><a class="dropdown-item" href="#">outro nível</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#">4° nível</a></li>
+                                <li class="dropdown-item"><a href="#">4° nível</a></li>
+                                <li class="dropdown-item"><a href="#">4° nível</a></li>
+                            </ul>
+                          </li>
+                            <li class="dropdown-item"><a href="#">3º nível</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="#">Segundo nível</a></li>
+                    <li class="dropdown-item"><a href="#">Segundo nível</a></li>
+                  </ul>
+                </li>
+              </ul>
+        </div>
+    </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js'></script>
+
+  
+
+</body>
+
+</html>
